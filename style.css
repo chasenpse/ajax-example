@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    position: relative;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/****************************************************************************/
+body {
+    background:#333;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size:2em;
+    font-weight:bold;
+    color:#eee;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-top:50px;
+    text-align:center;
+    text-decoration: underline;
+}
+
+#content {
+    width:100%;
+}
+
+#mainContainer {
+    margin:0 auto;
+}
+
+#fetchData {
+    width:200px;
+    height: 50px;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    margin:100px auto;
+    display:block;
+    background:#44BF55;
+    border:2px solid rgba(255,255,255,0.4);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:rgba(0,0,0,0.7);
+    box-shadow:3px 3px 3px rgba(0,0,0,0.1);
+}
+
+#fetchData.loading {
+    background:none;
+    border:0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color:rgba(255,255,255,0.7);
+    box-shadow:0px 0px 0px;
+}
+
+#items {
+    width:100%;
+    margin-top:50px;
+}
+
+#items th {
+    text-align:left;
+    background:#44BF55;
+    color:rgba(0,0,0,0.7);
+    font-weight:bold;
+}
+
+#items th,td {
+    padding:7px;
+}
+
+#items tr:nth-of-type(odd) {
+    background:rgba(255,255,255,0.25);
+}
+
+#items tr:nth-of-type(even) {
+    background:rgba(255,255,255,0.35);
+}
+
+#items tr:hover {
+    background:rgba(255,255,255,0.5);
+}
+
+#items td > a {
+    color:#00A;
+    text-decoration:none;
+}
+
+/* breakpoints */
+@media screen and (min-width: 1280px) {
+    #mainContainer {
+        width:1100px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    #mainContainer {
+        width:980px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #mainContainer {
+        width:700px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #mainContainer {
+        width:100%;
+    }
+}
